@@ -1,0 +1,128 @@
+2018-09-10 09:20:48.715  INFO 7144 --- [main] cn.majianbo.seckill.SeckillApplication   : Starting SeckillApplication on red with PID 7144 (D:\IdeaProjects\seckill\target\classes started by red in D:\IdeaProjects\seckill)
+2018-09-10 09:20:48.721  INFO 7144 --- [main] cn.majianbo.seckill.SeckillApplication   : No active profile set, falling back to default profiles: default
+2018-09-10 09:20:48.769  INFO 7144 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e461e41: startup date [Mon Sep 10 09:20:48 CST 2018]; root of context hierarchy
+2018-09-10 09:20:49.447  INFO 7144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-10 09:20:49.845  INFO 7144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$63ad03db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-10 09:20:50.290  INFO 7144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-09-10 09:20:50.313  INFO 7144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-10 09:20:50.313  INFO 7144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-10 09:20:50.318  INFO 7144 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\NetSarang;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files\Git\cmd;C:\Program Files\Redis\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Users\red\AppData\Local\Microsoft\WindowsApps;C:\Users\red\AppData\Roaming\npm;.]
+2018-09-10 09:20:50.418  INFO 7144 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-10 09:20:50.419  INFO 7144 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1650 ms
+2018-09-10 09:20:50.478  INFO 7144 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-09-10 09:20:50.481  INFO 7144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 09:20:50.481  INFO 7144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 09:20:50.481  INFO 7144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 09:20:50.482  INFO 7144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 09:20:50.878  INFO 7144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 09:20:51.189  INFO 7144 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e461e41: startup date [Mon Sep 10 09:20:48 CST 2018]; root of context hierarchy
+2018-09-10 09:20:51.250  INFO 7144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/seckill/{goodsId}/kill]}" onto public cn.majianbo.seckill.exception.KillResult<cn.majianbo.seckill.entity.KillSuccess> cn.majianbo.seckill.controller.KilController.kill(int,java.lang.String,java.lang.String)
+2018-09-10 09:20:51.251  INFO 7144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/seckill/findAll]}" onto public java.util.List<cn.majianbo.seckill.entity.GoodsInfo> cn.majianbo.seckill.controller.KilController.findAll()
+2018-09-10 09:20:51.251  INFO 7144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/seckill/{goodsId}/exposeUrl]}" onto public cn.majianbo.seckill.exception.KillResult<cn.majianbo.seckill.entity.Exposer> cn.majianbo.seckill.controller.KilController.exposeUrl(int)
+2018-09-10 09:20:51.253  INFO 7144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 09:20:51.254  INFO 7144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 09:20:51.281  INFO 7144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 09:20:51.281  INFO 7144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 09:20:51.297  INFO 7144 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 09:20:51.331  WARN 7144 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-09-10 09:20:51.922  INFO 7144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-10 09:20:51.924  INFO 7144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-10 09:20:51.929  INFO 7144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-09-10 09:20:51.966  INFO 7144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-10 09:20:51.970  INFO 7144 --- [main] cn.majianbo.seckill.SeckillApplication   : Started SeckillApplication in 3.712 seconds (JVM running for 5.221)
+2018-09-10 09:23:11.302  INFO 7144 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 09:23:11.303  INFO 7144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 09:23:11.319  INFO 7144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-09-10 09:23:11.369  INFO 7144 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-09-10 09:23:11.548  INFO 7144 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-09-10 09:23:11.554 DEBUG 7144 --- [http-nio-8080-exec-1] c.m.seckill.dao.GoodsInfoDao.findById    : ==>  Preparing: select * from goods_info where goods_id = ? 
+2018-09-10 09:23:11.570 DEBUG 7144 --- [http-nio-8080-exec-1] c.m.seckill.dao.GoodsInfoDao.findById    : ==> Parameters: 2(Integer)
+2018-09-10 09:23:11.588 TRACE 7144 --- [http-nio-8080-exec-1] c.m.seckill.dao.GoodsInfoDao.findById    : <==    Columns: goods_id, goods_name, number, start_time, end_time, create_time
+2018-09-10 09:23:11.589 TRACE 7144 --- [http-nio-8080-exec-1] c.m.seckill.dao.GoodsInfoDao.findById    : <==        Row: 2, 2000元限时抢小米8探索版, 100, 2018-09-06 17:00:52.0, 2018-09-06 17:00:52.0, 2018-09-06 17:00:52.0
+2018-09-10 09:23:11.592 DEBUG 7144 --- [http-nio-8080-exec-1] c.m.seckill.dao.GoodsInfoDao.findById    : <==      Total: 1
+2018-09-10 09:23:18.794 DEBUG 7144 --- [http-nio-8080-exec-2] c.m.seckill.dao.GoodsInfoDao.findById    : ==>  Preparing: select * from goods_info where goods_id = ? 
+2018-09-10 09:23:18.795 DEBUG 7144 --- [http-nio-8080-exec-2] c.m.seckill.dao.GoodsInfoDao.findById    : ==> Parameters: 3(Integer)
+2018-09-10 09:23:18.796 TRACE 7144 --- [http-nio-8080-exec-2] c.m.seckill.dao.GoodsInfoDao.findById    : <==    Columns: goods_id, goods_name, number, start_time, end_time, create_time
+2018-09-10 09:23:18.796 TRACE 7144 --- [http-nio-8080-exec-2] c.m.seckill.dao.GoodsInfoDao.findById    : <==        Row: 3, 123, 12, 2018-09-07 09:01:44.0, 2018-09-07 17:01:44.0, 2018-09-06 17:01:44.0
+2018-09-10 09:23:18.797 DEBUG 7144 --- [http-nio-8080-exec-2] c.m.seckill.dao.GoodsInfoDao.findById    : <==      Total: 1
+2018-09-10 09:23:24.362 DEBUG 7144 --- [http-nio-8080-exec-5] c.m.seckill.dao.GoodsInfoDao.findById    : ==>  Preparing: select * from goods_info where goods_id = ? 
+2018-09-10 09:23:24.362 DEBUG 7144 --- [http-nio-8080-exec-5] c.m.seckill.dao.GoodsInfoDao.findById    : ==> Parameters: 1(Integer)
+2018-09-10 09:23:24.363 TRACE 7144 --- [http-nio-8080-exec-5] c.m.seckill.dao.GoodsInfoDao.findById    : <==    Columns: goods_id, goods_name, number, start_time, end_time, create_time
+2018-09-10 09:23:24.364 TRACE 7144 --- [http-nio-8080-exec-5] c.m.seckill.dao.GoodsInfoDao.findById    : <==        Row: 1, 100元限时秒杀iPhone 6, 100, 2018-09-07 16:54:43.0, 2018-09-22 16:54:43.0, 2018-09-06 16:54:43.0
+2018-09-10 09:23:24.364 DEBUG 7144 --- [http-nio-8080-exec-5] c.m.seckill.dao.GoodsInfoDao.findById    : <==      Total: 1
+2018-09-10 09:24:31.189 DEBUG 7144 --- [http-nio-8080-exec-9] c.m.s.dao.GoodsInfoDao.reduceNumber      : ==>  Preparing: update goods_info set number = number - 1 where goods_id = ? and number > 0 
+2018-09-10 09:24:31.190 DEBUG 7144 --- [http-nio-8080-exec-9] c.m.s.dao.GoodsInfoDao.reduceNumber      : ==> Parameters: 1(Integer)
+2018-09-10 09:24:31.195 DEBUG 7144 --- [http-nio-8080-exec-9] c.m.s.dao.GoodsInfoDao.reduceNumber      : <==    Updates: 1
+2018-09-10 09:24:31.195 DEBUG 7144 --- [http-nio-8080-exec-9] c.m.seckill.dao.KillSuccessDao.add       : ==>  Preparing: insert into kill_success(goods_id, phone, create_time) values(?, ?, ?) 
+2018-09-10 09:24:31.196 DEBUG 7144 --- [http-nio-8080-exec-9] c.m.seckill.dao.KillSuccessDao.add       : ==> Parameters: 1(Integer), 123213213(String), 2018-09-10 09:24:31.195(Timestamp)
+2018-09-10 09:24:31.200 DEBUG 7144 --- [http-nio-8080-exec-9] c.m.seckill.dao.KillSuccessDao.add       : <==    Updates: 1
+2018-09-10 09:24:34.851 DEBUG 7144 --- [http-nio-8080-exec-4] c.m.s.dao.GoodsInfoDao.reduceNumber      : ==>  Preparing: update goods_info set number = number - 1 where goods_id = ? and number > 0 
+2018-09-10 09:24:34.851 DEBUG 7144 --- [http-nio-8080-exec-4] c.m.s.dao.GoodsInfoDao.reduceNumber      : ==> Parameters: 1(Integer)
+2018-09-10 09:24:34.852 DEBUG 7144 --- [http-nio-8080-exec-4] c.m.s.dao.GoodsInfoDao.reduceNumber      : <==    Updates: 1
+2018-09-10 09:24:34.853 DEBUG 7144 --- [http-nio-8080-exec-4] c.m.seckill.dao.KillSuccessDao.add       : ==>  Preparing: insert into kill_success(goods_id, phone, create_time) values(?, ?, ?) 
+2018-09-10 09:24:34.853 DEBUG 7144 --- [http-nio-8080-exec-4] c.m.seckill.dao.KillSuccessDao.add       : ==> Parameters: 1(Integer), 123213213(String), 2018-09-10 09:24:34.852(Timestamp)
+2018-09-10 09:24:34.863  INFO 7144 --- [http-nio-8080-exec-4] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-09-10 09:24:34.941 ERROR 7144 --- [http-nio-8080-exec-4] c.m.s.exception.GlobalExceptionHandler   : SeckillException(code=1000004, msg=重复秒杀)
+2018-09-10 09:24:35.931 DEBUG 7144 --- [http-nio-8080-exec-1] c.m.s.dao.GoodsInfoDao.reduceNumber      : ==>  Preparing: update goods_info set number = number - 1 where goods_id = ? and number > 0 
+2018-09-10 09:24:35.931 DEBUG 7144 --- [http-nio-8080-exec-1] c.m.s.dao.GoodsInfoDao.reduceNumber      : ==> Parameters: 1(Integer)
+2018-09-10 09:24:35.933 DEBUG 7144 --- [http-nio-8080-exec-1] c.m.s.dao.GoodsInfoDao.reduceNumber      : <==    Updates: 1
+2018-09-10 09:24:35.933 DEBUG 7144 --- [http-nio-8080-exec-1] c.m.seckill.dao.KillSuccessDao.add       : ==>  Preparing: insert into kill_success(goods_id, phone, create_time) values(?, ?, ?) 
+2018-09-10 09:24:35.933 DEBUG 7144 --- [http-nio-8080-exec-1] c.m.seckill.dao.KillSuccessDao.add       : ==> Parameters: 1(Integer), 123213213(String), 2018-09-10 09:24:35.933(Timestamp)
+2018-09-10 09:24:35.939 ERROR 7144 --- [http-nio-8080-exec-1] c.m.s.exception.GlobalExceptionHandler   : SeckillException(code=1000004, msg=重复秒杀)
+2018-09-10 09:24:36.531 DEBUG 7144 --- [http-nio-8080-exec-3] c.m.s.dao.GoodsInfoDao.reduceNumber      : ==>  Preparing: update goods_info set number = number - 1 where goods_id = ? and number > 0 
+2018-09-10 09:24:36.531 DEBUG 7144 --- [http-nio-8080-exec-3] c.m.s.dao.GoodsInfoDao.reduceNumber      : ==> Parameters: 1(Integer)
+2018-09-10 09:24:36.536 DEBUG 7144 --- [http-nio-8080-exec-3] c.m.s.dao.GoodsInfoDao.reduceNumber      : <==    Updates: 1
+2018-09-10 09:24:36.536 DEBUG 7144 --- [http-nio-8080-exec-3] c.m.seckill.dao.KillSuccessDao.add       : ==>  Preparing: insert into kill_success(goods_id, phone, create_time) values(?, ?, ?) 
+2018-09-10 09:24:36.537 DEBUG 7144 --- [http-nio-8080-exec-3] c.m.seckill.dao.KillSuccessDao.add       : ==> Parameters: 1(Integer), 123213213(String), 2018-09-10 09:24:36.536(Timestamp)
+2018-09-10 09:24:36.543 ERROR 7144 --- [http-nio-8080-exec-3] c.m.s.exception.GlobalExceptionHandler   : SeckillException(code=1000004, msg=重复秒杀)
+2018-09-10 09:29:47.594 DEBUG 7144 --- [http-nio-8080-exec-10] c.m.s.dao.GoodsInfoDao.reduceNumber      : ==>  Preparing: update goods_info set number = number - 1 where goods_id = ? and number > 0 
+2018-09-10 09:29:47.595 DEBUG 7144 --- [http-nio-8080-exec-10] c.m.s.dao.GoodsInfoDao.reduceNumber      : ==> Parameters: 1(Integer)
+2018-09-10 09:29:47.596 DEBUG 7144 --- [http-nio-8080-exec-10] c.m.s.dao.GoodsInfoDao.reduceNumber      : <==    Updates: 1
+2018-09-10 09:29:47.596 DEBUG 7144 --- [http-nio-8080-exec-10] c.m.seckill.dao.KillSuccessDao.add       : ==>  Preparing: insert into kill_success(goods_id, phone, create_time) values(?, ?, ?) 
+2018-09-10 09:29:47.597 DEBUG 7144 --- [http-nio-8080-exec-10] c.m.seckill.dao.KillSuccessDao.add       : ==> Parameters: 1(Integer), 123213213(String), 2018-09-10 09:29:47.596(Timestamp)
+2018-09-10 09:29:47.603 ERROR 7144 --- [http-nio-8080-exec-10] c.m.s.exception.GlobalExceptionHandler   : SeckillException(code=1000004, msg=重复秒杀)
+2018-09-10 09:29:51.899 DEBUG 7144 --- [http-nio-8080-exec-2] c.m.seckill.dao.GoodsInfoDao.findById    : ==>  Preparing: select * from goods_info where goods_id = ? 
+2018-09-10 09:29:51.900 DEBUG 7144 --- [http-nio-8080-exec-2] c.m.seckill.dao.GoodsInfoDao.findById    : ==> Parameters: 1(Integer)
+2018-09-10 09:29:51.900 TRACE 7144 --- [http-nio-8080-exec-2] c.m.seckill.dao.GoodsInfoDao.findById    : <==    Columns: goods_id, goods_name, number, start_time, end_time, create_time
+2018-09-10 09:29:51.900 TRACE 7144 --- [http-nio-8080-exec-2] c.m.seckill.dao.GoodsInfoDao.findById    : <==        Row: 1, 100元限时秒杀iPhone 6, 99, 2018-09-07 16:54:43.0, 2018-09-22 16:54:43.0, 2018-09-06 16:54:43.0
+2018-09-10 09:29:51.901 DEBUG 7144 --- [http-nio-8080-exec-2] c.m.seckill.dao.GoodsInfoDao.findById    : <==      Total: 1
+2018-09-10 09:29:53.163 DEBUG 7144 --- [http-nio-8080-exec-5] c.m.seckill.dao.GoodsInfoDao.findById    : ==>  Preparing: select * from goods_info where goods_id = ? 
+2018-09-10 09:29:53.163 DEBUG 7144 --- [http-nio-8080-exec-5] c.m.seckill.dao.GoodsInfoDao.findById    : ==> Parameters: 1(Integer)
+2018-09-10 09:29:53.164 TRACE 7144 --- [http-nio-8080-exec-5] c.m.seckill.dao.GoodsInfoDao.findById    : <==    Columns: goods_id, goods_name, number, start_time, end_time, create_time
+2018-09-10 09:29:53.164 TRACE 7144 --- [http-nio-8080-exec-5] c.m.seckill.dao.GoodsInfoDao.findById    : <==        Row: 1, 100元限时秒杀iPhone 6, 99, 2018-09-07 16:54:43.0, 2018-09-22 16:54:43.0, 2018-09-06 16:54:43.0
+2018-09-10 09:29:53.164 DEBUG 7144 --- [http-nio-8080-exec-5] c.m.seckill.dao.GoodsInfoDao.findById    : <==      Total: 1
+2018-09-10 09:29:53.907 DEBUG 7144 --- [http-nio-8080-exec-7] c.m.seckill.dao.GoodsInfoDao.findById    : ==>  Preparing: select * from goods_info where goods_id = ? 
+2018-09-10 09:29:53.909 DEBUG 7144 --- [http-nio-8080-exec-7] c.m.seckill.dao.GoodsInfoDao.findById    : ==> Parameters: 1(Integer)
+2018-09-10 09:29:53.910 TRACE 7144 --- [http-nio-8080-exec-7] c.m.seckill.dao.GoodsInfoDao.findById    : <==    Columns: goods_id, goods_name, number, start_time, end_time, create_time
+2018-09-10 09:29:53.910 TRACE 7144 --- [http-nio-8080-exec-7] c.m.seckill.dao.GoodsInfoDao.findById    : <==        Row: 1, 100元限时秒杀iPhone 6, 99, 2018-09-07 16:54:43.0, 2018-09-22 16:54:43.0, 2018-09-06 16:54:43.0
+2018-09-10 09:29:53.911 DEBUG 7144 --- [http-nio-8080-exec-7] c.m.seckill.dao.GoodsInfoDao.findById    : <==      Total: 1
+2018-09-10 09:29:54.445 DEBUG 7144 --- [http-nio-8080-exec-9] c.m.seckill.dao.GoodsInfoDao.findById    : ==>  Preparing: select * from goods_info where goods_id = ? 
+2018-09-10 09:29:54.445 DEBUG 7144 --- [http-nio-8080-exec-9] c.m.seckill.dao.GoodsInfoDao.findById    : ==> Parameters: 1(Integer)
+2018-09-10 09:29:54.445 TRACE 7144 --- [http-nio-8080-exec-9] c.m.seckill.dao.GoodsInfoDao.findById    : <==    Columns: goods_id, goods_name, number, start_time, end_time, create_time
+2018-09-10 09:29:54.446 TRACE 7144 --- [http-nio-8080-exec-9] c.m.seckill.dao.GoodsInfoDao.findById    : <==        Row: 1, 100元限时秒杀iPhone 6, 99, 2018-09-07 16:54:43.0, 2018-09-22 16:54:43.0, 2018-09-06 16:54:43.0
+2018-09-10 09:29:54.446 DEBUG 7144 --- [http-nio-8080-exec-9] c.m.seckill.dao.GoodsInfoDao.findById    : <==      Total: 1
+2018-09-10 09:29:56.362 DEBUG 7144 --- [http-nio-8080-exec-10] c.m.seckill.dao.GoodsInfoDao.findById    : ==>  Preparing: select * from goods_info where goods_id = ? 
+2018-09-10 09:29:56.362 DEBUG 7144 --- [http-nio-8080-exec-10] c.m.seckill.dao.GoodsInfoDao.findById    : ==> Parameters: 1(Integer)
+2018-09-10 09:29:56.363 TRACE 7144 --- [http-nio-8080-exec-10] c.m.seckill.dao.GoodsInfoDao.findById    : <==    Columns: goods_id, goods_name, number, start_time, end_time, create_time
+2018-09-10 09:29:56.363 TRACE 7144 --- [http-nio-8080-exec-10] c.m.seckill.dao.GoodsInfoDao.findById    : <==        Row: 1, 100元限时秒杀iPhone 6, 99, 2018-09-07 16:54:43.0, 2018-09-22 16:54:43.0, 2018-09-06 16:54:43.0
+2018-09-10 09:29:56.364 DEBUG 7144 --- [http-nio-8080-exec-10] c.m.seckill.dao.GoodsInfoDao.findById    : <==      Total: 1
+2018-09-10 09:29:56.997 DEBUG 7144 --- [http-nio-8080-exec-2] c.m.seckill.dao.GoodsInfoDao.findById    : ==>  Preparing: select * from goods_info where goods_id = ? 
+2018-09-10 09:29:56.997 DEBUG 7144 --- [http-nio-8080-exec-2] c.m.seckill.dao.GoodsInfoDao.findById    : ==> Parameters: 1(Integer)
+2018-09-10 09:29:56.997 TRACE 7144 --- [http-nio-8080-exec-2] c.m.seckill.dao.GoodsInfoDao.findById    : <==    Columns: goods_id, goods_name, number, start_time, end_time, create_time
+2018-09-10 09:29:56.998 TRACE 7144 --- [http-nio-8080-exec-2] c.m.seckill.dao.GoodsInfoDao.findById    : <==        Row: 1, 100元限时秒杀iPhone 6, 99, 2018-09-07 16:54:43.0, 2018-09-22 16:54:43.0, 2018-09-06 16:54:43.0
+2018-09-10 09:29:56.998 DEBUG 7144 --- [http-nio-8080-exec-2] c.m.seckill.dao.GoodsInfoDao.findById    : <==      Total: 1
+2018-09-10 09:29:57.507 DEBUG 7144 --- [http-nio-8080-exec-5] c.m.seckill.dao.GoodsInfoDao.findById    : ==>  Preparing: select * from goods_info where goods_id = ? 
+2018-09-10 09:29:57.508 DEBUG 7144 --- [http-nio-8080-exec-5] c.m.seckill.dao.GoodsInfoDao.findById    : ==> Parameters: 1(Integer)
+2018-09-10 09:29:57.508 TRACE 7144 --- [http-nio-8080-exec-5] c.m.seckill.dao.GoodsInfoDao.findById    : <==    Columns: goods_id, goods_name, number, start_time, end_time, create_time
+2018-09-10 09:29:57.508 TRACE 7144 --- [http-nio-8080-exec-5] c.m.seckill.dao.GoodsInfoDao.findById    : <==        Row: 1, 100元限时秒杀iPhone 6, 99, 2018-09-07 16:54:43.0, 2018-09-22 16:54:43.0, 2018-09-06 16:54:43.0
+2018-09-10 09:29:57.509 DEBUG 7144 --- [http-nio-8080-exec-5] c.m.seckill.dao.GoodsInfoDao.findById    : <==      Total: 1
+2018-09-10 09:29:58.051 DEBUG 7144 --- [http-nio-8080-exec-7] c.m.seckill.dao.GoodsInfoDao.findById    : ==>  Preparing: select * from goods_info where goods_id = ? 
+2018-09-10 09:29:58.052 DEBUG 7144 --- [http-nio-8080-exec-7] c.m.seckill.dao.GoodsInfoDao.findById    : ==> Parameters: 1(Integer)
+2018-09-10 09:29:58.052 TRACE 7144 --- [http-nio-8080-exec-7] c.m.seckill.dao.GoodsInfoDao.findById    : <==    Columns: goods_id, goods_name, number, start_time, end_time, create_time
+2018-09-10 09:29:58.052 TRACE 7144 --- [http-nio-8080-exec-7] c.m.seckill.dao.GoodsInfoDao.findById    : <==        Row: 1, 100元限时秒杀iPhone 6, 99, 2018-09-07 16:54:43.0, 2018-09-22 16:54:43.0, 2018-09-06 16:54:43.0
+2018-09-10 09:29:58.053 DEBUG 7144 --- [http-nio-8080-exec-7] c.m.seckill.dao.GoodsInfoDao.findById    : <==      Total: 1
+2018-09-10 09:29:58.692 DEBUG 7144 --- [http-nio-8080-exec-9] c.m.seckill.dao.GoodsInfoDao.findById    : ==>  Preparing: select * from goods_info where goods_id = ? 
+2018-09-10 09:29:58.693 DEBUG 7144 --- [http-nio-8080-exec-9] c.m.seckill.dao.GoodsInfoDao.findById    : ==> Parameters: 1(Integer)
+2018-09-10 09:29:58.693 TRACE 7144 --- [http-nio-8080-exec-9] c.m.seckill.dao.GoodsInfoDao.findById    : <==    Columns: goods_id, goods_name, number, start_time, end_time, create_time
+2018-09-10 09:29:58.693 TRACE 7144 --- [http-nio-8080-exec-9] c.m.seckill.dao.GoodsInfoDao.findById    : <==        Row: 1, 100元限时秒杀iPhone 6, 99, 2018-09-07 16:54:43.0, 2018-09-22 16:54:43.0, 2018-09-06 16:54:43.0
+2018-09-10 09:29:58.694 DEBUG 7144 --- [http-nio-8080-exec-9] c.m.seckill.dao.GoodsInfoDao.findById    : <==      Total: 1
